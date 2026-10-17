@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "Homework 2 - GraphQL Subscription",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "greetings",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Accept", "value": "text/event-stream" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"query\":\"subscription Greetings { greetings }\"}"
+        },
+        "url": "https://graphql.postman-echo.com/graphql"
+      }
+    }
+  ]
+}
